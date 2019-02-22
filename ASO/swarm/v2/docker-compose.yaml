@@ -20,7 +20,7 @@ services:
       - senhaBanco2
 
   mysql:
-    image: mysql
+    image: josecastillolema/mysql
     ports:
       - "3306:3306"
     volumes:
