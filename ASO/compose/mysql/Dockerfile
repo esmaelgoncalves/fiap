@@ -1,5 +1,9 @@
-FROM mysql:5.7
-LABEL maintainer="Jeff Geerling"
+FROM mysql
 
-EXPOSE 3306
-CMD ["mysqld"]
+MAINTAINER Jose Castillo <profjose.lema@fiap.com.br>
+
+#ENV MYSQL_USER=root \
+#    MYSQL_DATABASE=fiapdb \
+#    MYSQL_ROOT_PASSWORD=senhaFiap
+
+ADD ./aso.sql /docker-entrypoint-initdb.d
