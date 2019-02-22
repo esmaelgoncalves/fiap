@@ -27,7 +27,6 @@ services:
       MYSQL_USER: root
       MYSQL_DATABASE: fiapdb
       MYSQL_ROOT_PASSWORD: senhaFiap
-
     deploy:
       replicas: 1
       # resources:
